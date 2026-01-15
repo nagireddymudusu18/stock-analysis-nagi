@@ -187,7 +187,7 @@ export default function TopStocks() {
 
       {!loading && stocks.length === 0 && !error && (
         <div className="bg-gray-100 border border-gray-300 text-gray-700 px-4 py-3 rounded-lg text-center">
-          Click "Get Top Stocks" to analyze and rank stocks
+          Click &quot;Get Top Stocks&quot; to analyze and rank stocks
         </div>
       )}
     </div>

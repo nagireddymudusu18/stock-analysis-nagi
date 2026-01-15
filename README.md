@@ -2,6 +2,25 @@
 
 A modern, full-stack web application for analyzing NSE and BSE stocks with real-time data, fundamental analysis, stock screening, and interactive visualizations built with React and Node.js.
 
+## 🛡️ Code Quality & Deployment
+
+This project includes:
+- ✅ **ESLint** - Automated code quality checks
+- ✅ **Pre-deployment validation** - Blocks deployments with errors
+- ✅ **GitHub Actions CI/CD** - Automated testing on push
+- ✅ **Safe Vercel deployments** - Only deploy clean code
+
+**Quick Commands:**
+```bash
+npm run lint        # Check code quality
+npm run lint:fix    # Auto-fix issues
+npm run validate    # Full pre-deployment check
+```
+
+See [DEPLOYMENT_SAFETY.md](DEPLOYMENT_SAFETY.md) for details.
+
+---
+
 ## 🌟 Features
 
 - **Real-time Stock Data**: Fetch latest stock prices and historical data from NSE/BSE via Yahoo Finance API

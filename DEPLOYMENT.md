@@ -1,5 +1,34 @@
 # 🚀 Deploy Stock Analysis App to Vercel
 
+## ✅ Pre-Deployment Quality Checks
+
+This project includes automated validation to ensure code quality before deployment:
+
+### Available Validation Scripts:
+```bash
+# Run ESLint to check code quality
+npm run lint
+
+# Fix auto-fixable ESLint issues
+npm run lint:fix
+
+# Run full validation (lint + build)
+npm run validate
+
+# Run pre-deployment checks
+npm run predeploy
+```
+
+### Automated Vercel Deployment:
+When you deploy to Vercel, the following checks run automatically:
+1. ✅ **ESLint Code Quality Check** - Ensures no errors or warnings
+2. ✅ **Build Test** - Verifies the app builds successfully
+3. ✅ **Deployment** - Only proceeds if all checks pass
+
+**If any check fails, deployment is blocked automatically!**
+
+---
+
 ## 📋 Domain Suggestions with "Nagi"
 
 **Available Domain Names:**
@@ -56,14 +85,37 @@ git push -u origin main
 
 ### **Step 6: Deploy to Vercel**
 
+#### **✨ Before Deployment - Run Validation Locally**
+```powershell
+# Test your deployment locally before pushing to Vercel
+npm run validate
+
+# Or run the full pre-deployment check
+npm run predeploy
+```
+
+This will:
+- ✅ Run ESLint to check code quality
+- ✅ Test the build process
+- ✅ Ensure everything works before deployment
+
 #### **Option A: Using Vercel Website (Easiest)**
 1. Go to https://vercel.com/signup
 2. Sign up with GitHub account
 3. Click **"Add New Project"**
 4. Import `stock-analysis-nagi` repository
 5. Framework Preset: **Vite**
-6. Click **Deploy**
-7. Done! You'll get: `stock-analysis-nagi.vercel.app`
+6. **Important:** Vercel will automatically run `npm run vercel-build` which includes:
+   - ESLint validation
+   - Build process
+   - Deployment (only if validation passes)
+7. Click **Deploy**
+8. Done! You'll get: `stock-analysis-nagi.vercel.app`
+
+**🛡️ Safety Features:**
+- If ESLint finds errors → Deployment blocked ❌
+- If build fails → Deployment blocked ❌
+- All checks pass → Deployment proceeds ✅
 
 #### **Option B: Using Vercel CLI**
 ```powershell

@@ -197,7 +197,7 @@ export default function CompareStocks() {
 
       {!loading && compareData.length === 0 && !error && (
         <div className="bg-gray-100 border border-gray-300 text-gray-700 px-4 py-3 rounded-lg text-center">
-          Enter stock symbols and click "Compare Stocks" to see the comparison
+          Enter stock symbols and click &quot;Compare Stocks&quot; to see the comparison
         </div>
       )}
     </div>

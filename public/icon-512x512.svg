@@ -1,0 +1,25 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="64" fill="url(#gradient)"/>
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="50%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Chart Bars -->
+  <rect x="120" y="280" width="80" height="160" rx="8" fill="#FCD34D"/>
+  <rect x="220" y="200" width="80" height="240" rx="8" fill="#FCD34D"/>
+  <rect x="320" y="140" width="80" height="300" rx="8" fill="#FCD34D"/>
+  
+  <!-- Trend Line -->
+  <path d="M 80 350 L 180 280 L 280 220 L 380 160 L 450 120" 
+        stroke="#10B981" stroke-width="8" stroke-linecap="round" 
+        stroke-linejoin="round" fill="none"/>
+  
+  <!-- Arrow -->
+  <path d="M 420 90 L 450 120 L 420 150" 
+        stroke="#10B981" stroke-width="8" stroke-linecap="round" 
+        stroke-linejoin="round" fill="none"/>
+</svg>
